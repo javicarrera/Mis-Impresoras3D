@@ -1,0 +1,132 @@
+Partlist
+
+Exported from melzi.sch at 26/07/2012 16:26
+
+EAGLE Version 6.2.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part     Value                       Device                      Package               Library            Sheet
+
+B1       RESET                       TAC_SWITCHSMD               TACTILE_SWITCH_SMD    SparkFun           1
+C1       0.1uF                       CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C2       0.22uF                      CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C3       0.1uF                       CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C4       0.1uF                       CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C5       4.7 uF                      CPOL-EUSMCC                 SMC_C                 rcl                1
+C6       4.7 uF                      CPOL-EUSMCC                 SMC_C                 rcl                1
+C7       4.7 uF                      CPOL-EUSMCC                 SMC_C                 rcl                1
+C8       4.7 uF                      CPOL-EUSMCC                 SMC_C                 rcl                1
+C9       4.7 uF                      CPOL-EUSMCC                 SMC_C                 rcl                1
+C10      10uF                        CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C11      0.1uF                       CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C12      100uF                       CPOL-USD                    PANASONIC_D           rcl                1
+C13      0.1uF                       CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C14      0.22uF                      CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C15      10uF                        CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C16      0.1uF                       CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C17      100uF                       CPOL-USD                    PANASONIC_D           rcl                1
+C18      0.1uF                       CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C19      0.22uF                      CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C20      10uF                        CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C21      0.1uF                       CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C22      100uF                       CPOL-USD                    PANASONIC_D           rcl                1
+C23      0.1uF                       CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C24      4.7 uF 30V                  CPOL-EUSMCC                 SMC_C                 rcl                1
+C25      .33uf                       CAP0805                     0805                  SparkFun           1
+C27      .1uf                        CAP0805                     0805                  SparkFun           1
+C28      100 uF                      CPOL-EUUD-6,3X7,7           UD-6,3X7,7_NICHICON   rcl                1
+C29      100 uF                      CPOL-EUUD-6,3X7,7           UD-6,3X7,7_NICHICON   rcl                1
+C30      100 uF                      CPOL-EUUD-6,3X7,7           UD-6,3X7,7_NICHICON   rcl                1
+C31      0.1 uF                      C-EUC1206                   C1206                 rcl                1
+C32      0.1 uF                      C-EUC1206                   C1206                 rcl                1
+C41      1 uF                        C-EUC1206                   C1206                 rcl                1
+C42      1 uF                        C-EUC1206                   C1206                 rcl                1
+C43      0.1 uF                      C-EUC1206                   C1206                 rcl                1
+C44      0.1 uF                      C-EUC1206                   C1206                 rcl                1
+C45      0.33 uF                     C-EUC1206                   C1206                 rcl                1
+C46      0.1uF                       CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C47      0.22uF                      CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C48      10uF                        CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C49      0.1uF                       CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+C50      100uF                       CPOL-USD                    PANASONIC_D           rcl                1
+C51      0.1uF                       CAPACITOR_0805              CAPC2012X145AN        ipc-7351-capacitor 1
+IC5      7805DT                      7805DT                      TO252                 linear             1
+IC6      ATMEGA1284P                 ATMEGA644A                  TQFP44                atmel              1
+IC7      4050D                       4050D                       SO16                  40xx               1
+IC8      FT232RL-BASICSSOP           FT232RL-BASICSSOP           SSOP28DB              SparkFun           1
+JP1      X-MOT                       M04SCREW                    SCREWTERMINAL-3.5MM-4 SparkFun           1
+JP2      Y-MOT                       M04SCREW                    SCREWTERMINAL-3.5MM-4 SparkFun           1
+JP3      Z-MOT                       M04SCREW                    SCREWTERMINAL-3.5MM-4 SparkFun           1
+JP4      E-MOT                       M04SCREW                    SCREWTERMINAL-3.5MM-4 SparkFun           1
+JP5      PWR                         M025MM                      SCREWTERMINAL-5MM-2   SparkFun           1
+JP6      BED                         M025MM                      SCREWTERMINAL-5MM-2   SparkFun           1
+JP7      END                         M025MM                      SCREWTERMINAL-5MM-2   SparkFun           1
+JP8      FAN                         M025MM                      SCREWTERMINAL-5MM-2   SparkFun           1
+JP9      X-STOP                      M023.5MM                    SCREWTERMINAL-3.5MM-2 SparkFun           1
+JP10     Y-STOP                      M023.5MM                    SCREWTERMINAL-3.5MM-2 SparkFun           1
+JP11     Z-STOP                      M023.5MM                    SCREWTERMINAL-3.5MM-2 SparkFun           1
+JP12     BEDTEMP                     M023.5MM                    SCREWTERMINAL-3.5MM-2 SparkFun           1
+JP13     ENDTEMP                     M023.5MM                    SCREWTERMINAL-3.5MM-2 SparkFun           1
+JP14     AUTO-RST                    M02PTH                      1X02                  SparkFun           1
+JP15     VREG/USB                    M03PTH                      1X03                  SparkFun           1
+JP16     M05X2PTH                    M05X2PTH                    AVR_ICSP              SparkFun           1
+JP17     AVR_SPI_PRG_6PTH            AVR_SPI_PRG_6PTH            2X3                   SparkFun           1
+JS1      HOTBED_BYPASS               JUMPER-2SMD-NO              SJ_2S-NO              SparkFun           1
+JS2      HOTEND_BYPASS               JUMPER-2SMD-NO              SJ_2S-NO              SparkFun           1
+JS3      FAN_BYPASS                  JUMPER-2SMD-NO              SJ_2S-NO              SparkFun           1
+JS16     MS3                         JUMPER-2SMD-NC              SJ_2S                 SparkFun           1
+L1       DEBUG                       LED1206                     LED-1206              SparkFun           1
+M1       RFP30N06LE                  MOSFET-NCHANNELFDD8580      DPAK                  SparkFun           1
+M2       RFP30N06LE                  MOSFET-NCHANNELFDD8580      DPAK                  SparkFun           1
+M3       RFP30N06LE                  MOSFET-NCHANNELFDD8580      DPAK                  SparkFun           1
+MS-X                                 SOLDERJUMPER_2WAYCONNECTED  SJ_3_CONNECTED        printrbot          1
+MS-X1                                SOLDERJUMPER_2WAYCONNECTED  SJ_3_CONNECTED        printrbot          1
+MS-X2                                SOLDERJUMPER_2WAYCONNECTED  SJ_3_CONNECTED        printrbot          1
+MS-X3                                SOLDERJUMPER_2WAYCONNECTED  SJ_3_CONNECTED        printrbot          1
+Q1       16MHZ                       CSTCR6M00G53Z               CSTCR6M               murata-filter      1
+R1       10k                         RESISTOR1206                1206                  SparkFun           1
+R2       10k                         RESISTOR1206                1206                  SparkFun           1
+R3       10k                         RESISTOR1206                1206                  SparkFun           1
+R4       4k7                         RESISTOR1206                1206                  SparkFun           1
+R5       4k7                         RESISTOR1206                1206                  SparkFun           1
+R6       10k                         RTRIM-ST-4EA                RTRIM-ST4ETB          printrbot          1
+R7       0.11                        RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R8       10k                         RTRIM-ST-4EA                RTRIM-ST4ETB          printrbot          1
+R9       10k                         RTRIM-ST-4EA                RTRIM-ST4ETB          printrbot          1
+R10      10k                         RESISTOR1206                1206                  SparkFun           1
+R11      10k                         RESISTOR1206                1206                  SparkFun           1
+R12      10k                         RESISTOR1206                1206                  SparkFun           1
+R13      0.11                        RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R14      10k                         RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R15      100k                        RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R16      4k7                         RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R17      20k                         RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R18      0.11                        RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R19      0.11                        RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R20      10k                         RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R21      100k                        RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R22      0.11                        RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R23      0.11                        RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R24      10k                         RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R25      1K                          RESISTOR1206                1206                  SparkFun           1
+R26      1K                          RESISTOR1206                1206                  SparkFun           1
+R27      10k                         RTRIM-ST-4EA                RTRIM-ST4ETB          printrbot          1
+R28      0.11                        RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R29      0.11                        RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R30      10k                         RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R31      100k                        RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R32      4k7                         RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R33      200R                        R-EU_0309/V                 0309V                 rcl                1
+R34      4k7                         RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R35      20k                         RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R36      100k                        RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R37      4k7                         RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R38      20k                         RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+R39      20k                         RESISTOR_0805               RESC2012X70N          ipc-7351-resistor  1
+U1       A4982                       A4982                       TSSOP-24              printrbot          1
+U2       A4982                       A4982                       TSSOP-24              printrbot          1
+U3       A4982                       A4982                       TSSOP-24              printrbot          1
+U4       A4982                       A4982                       TSSOP-24              printrbot          1
+X1       MICROSD                     MICROSD                     MICROSD               adafruit           1
+X2       MINI-USB-SHIELD-UX60-MB-5ST MINI-USB-SHIELD-UX60-MB-5ST UX60-MB-5ST           con-hirose         1
