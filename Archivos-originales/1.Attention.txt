@@ -1,0 +1,2 @@
+1.Please copy all files to PC
+2.Printing files can only be in the top-level directory, which cannot have a folder path.
