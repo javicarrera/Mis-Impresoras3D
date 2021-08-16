@@ -1,0 +1,41 @@
+After downloading, Please Read "Read me.txt"
+
+Firmware import machine
+Step 1: Copy the following folders (2) and files (2) to TF and directory:
+Mks_font (folder)
+Mks_pic (folder)
+Robin_nano43.bin
+robin_nano43_cfg
+
+Step 2: Insert the TF card into the machine and restart
+
+Note: Incorrect direction or other exception, Please copy "RRobin_nano43.bin” in "BACKUP 1" or “BACKUP 2”, Replace the original file, And repeat steps 1 and 2.
+
+Enable BLtouch:
+Click "Settings"
+Click on the "Machine Settings"
+Click on the "Machine"
+Click "Next"
+Click on the "Leveling Settings"
+Click on the "Leveling Settings"
+Set "Enable Auto Leveling" to "Yes"
+Set "Enable BLtouch" to "yes"
+
+固件导入机器
+步骤1：需要把以下文件夹（2个）和文件拷贝（2个）至TF根目录下：
+mks_font（文件夹）
+mks_pic（文件夹）
+Robin_nano43.bin
+robin_nano43_cfg
+步骤2：把TF卡插入机器，重启
+提示：方向不对或其他异常，请拷贝“Backup 1”或“BACKUP 2”中的robin_nano43_cfg，替换原来的文件，重新执行步骤1、步骤2
+
+启用BLtouch：
+点击“设置”  
+点击“机器参数”
+点击“机器设置”
+点击“下一页”
+点击“调平设置” 
+点击“调平设置”
+设置“自动调平”成“是”
+设置“启用 BLtouch”成“是”

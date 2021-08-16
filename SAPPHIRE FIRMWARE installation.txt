@@ -1,0 +1,13 @@
+2.0 Firmware Update!!!
+Of Sapphire Plus, Sapphire Pro, and BLUER printer
+1、According to the content that needs to be updated, copy the following file to the SD card:
+(1)、update the config file：robin_nano35_cfg.txt
+(2)、update images： mks_pic
+(3)、update font： mks_font
+(4)、update TFT firmware： Robin_nano35.bin
+(5)、update Wifi firmware： MksWifi.bin
+2、V2.0.0 Modifications:
+(1).Add online parameter adjustment function;
+(2).Fix the garbled characters of Chinese files transmitted by cura plugin
+(3).Correct the abnormal display problem after the dialog interface wakes up;
+(4).Optimize the printing function of the pc software through the wifi module;
