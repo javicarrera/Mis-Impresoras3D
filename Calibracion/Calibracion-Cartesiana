@@ -1,0 +1,45 @@
+https://forum.duet3d.com/post/130939
+
+Assuming you have basic calibration out of the way...
+The volumetric extrusion rate of your hotend will be the limiting factor. Once you know that you can find a print speed/layer height/extrusion width combo that maximizes the extrusion rate and produces a good surface finish.
+
+I think this is too often overlooked in 3D printing. When I see people say they are printing at 200mm/s I have to wonder what layer height and extrusion width are they using? What is their acceleration and jerk values? Is the surface quality any good? Is the part strong?
+
+Take this for example:
+ecf5100a-2603-4fe2-85af-ed0cf2e3707b-image.png
+
+One is printing at 55mm/s and the other at 125mm/s. But the volumetric rate is the same, and if you sliced the same model with those two different profiles for layer height and extrusion width, total print time will be roughly the same. (slightly less for the 0.3 layer profile due to less repetition of movement).
+
+Depending on what you're printing, one or the other may make more sense, but the point is that print speed is almost irrelevant as long as you are maximizing your volumetric rate, you will be completing the print in as little time as possible.
+
+In addition to the melt rate limit, you'll have to be able to cool the extruded plastic fast enough. So your cooling solution needs to be sufficient, and minimum layer time will be practical limit on speed at the other end.
+
+You can use some calculators to find the theoretical limits for top speed and acceleration, but by the sounds of it they are already well above practical values for qualities sake on your printer.
+
+Now you don't mention much about your printers mechanical setup, but your sig says Hephaestus, which would be quite rigid. But as a general rule I would suggest that you set your maximum X Y speed to be equal to your travel move speed. That way when you use the speed factor slider you won't be able to increase your travel speeds to dangerous levels.
+
+For travel acceleration, using the acceleration calculator to find the max for your motors/power supply without losing torque would be a start. In practice, you'd probably find the travel moves to be particularly violent, and this can have a negative impact on quality from ringing, and from the nozzle dragging filament at the end of an extrusion move causing stringing or blobs.
+
+To find this speed/accel combo for travel moves, I would do a dry run of a larger model to get a feel for what travel moves would actually look like. Adjust the speed factor and travel acceleration during the print. You'll be able to tell the difference between sluggish movement and rough jerky movement. (for my coreXY travel is 175mm/s and 2500 accel and 1500mm/min jerk. Anything more is too rough and may skip steps if it catches a curled edge.)
+
+Once you have travels set up, you can move onto print moves. For external perimeters, I use the max speed that maximizes my volumetric flow, and then limit that for quality using acceleration and jerk. First I tune for jerk by setting acceleration to the same as the travel acceleration and then adjusting jerk until it sounds smooth. I know that's subjective, but trust me, you can tell the difference between smooth motion, sluggish motion, and smooth but rapid motion. (For me that's 1200mm/min for external walls, and 1500mm/min for infill)
+
+Now that print speed and jerk is set. You can use a test cube for ringing testing to dial in wall acceleration. Just start low and increase it every few layers and repeat until you've got no ringing. Something like this scaled up to 100mm cubed works well. ringtest.stl
+
+You may also find dynamic acceleration adjustment useful.
+
+For internal features acceleration is less critical because ringing doesn't really matter, so I usually use a value in between the external wall and travel values.
+
+At that point I tune for retraction distance and speed using a simple retraction tower. Using firmware retraction allows you to change the values every few layers. Within about two cycles you can get it dialed in pretty well. For me, 1mm retraction and 60mm/s retract and 45mm/s unretract seems to work best (titan aero)
+
+With retraction done pressure advance is next. I use the simple cube/cylinder method described here: https://duet3d.dozuki.com/Wiki/Pressure_advance#Section_Methods_of_finding_the_right_amount_of_pressure_advance
+
+Make sure your extruder max speed/accel/jerk values are sufficiently high to allow pressure advance to work optimally.
+
+Once you find the right PA value, you may need to reduce retraction distance slightly and increase the skin/infill wall overlap.
+
+I should also mention that I usually use Cura because it allows for detailed control over speed/accel/jerk values per move type. This gives me a great deal of control, but it also means that those values are baked into the gcode and cannot be changed on the fly during a print. Disable those features during live tuning obviously.
+
+Prusa slicer allows control over speed and acceleration for some moves but not jerk.
+
+If you use a slicer that doesn't give you that level of control, you can at least use M204 to set separate acceleration values for print and travel moves.
